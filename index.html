@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row w-100 mb-4">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand font-weight-bold" href="#">Hayden White</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mx-2 mb-lg-0 icon-link-hover">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <form>
+            <div class="row">  
+                <div class="form-check col-md-6 mb-4">
+                    <label for="validaton-firstname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="validaton-firstname" placeholder="First Name">
+                    <div class="invalid-feedback">
+                        Please enter your first name.
+                </div>
+                </div>
+                <div class="form-check col-md-6 mb-4">
+                    <label for="validaton-lastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="validaton-lastname" placeholder="Last Name">
+                    <div class="invalid-feedback">
+                        Please enter your last name.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-check col-md-6 mb-4">
+                    <label for="validaton-email" class="form-label">Email</label>
+                    <input type="email" class="form-control form-check" id="validaton-email" placeholder="Email" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
+                    </div>
+                </div>
+                <div class="form-check col-md-6 mb-4">
+                    <label for="validation-password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="validation-password" placeholder="Password" required>
+                </div>
+                <button class="btn btn-primary btn-sm" type="submit">Submit</button>
+            </div>
+        </form>
+        <div class="table-responsive mt-4">
+            <table class="table table-striped table-bordered table-hover table-sm">
+                <thead class="table-header">
+                    <tr>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody id="user-table-body">
+                    <tr>
+                        <td>Hayden</td>
+                        <td>White</td>
+                        <td>GHKWhite@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jasmine</td>
+                        <td>Harris</td>
+                        <td>example@email.com></td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Harris</td>
+                        <td>anotherexample@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Doe</td>
+                        <td>jane@doe.com</td>
+                </tbody>
+            </table>
+        </div>
+        <div class="row mt-4">
+            <div class="mb-4 d-flex justify-content-center">
+                <img src="download (4).jpg" class="img-fluid rounded-start" alt="prison overhead view">
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="mb-4 d-flex justify-content-center">
+                <img src="download (3).jpg" class="img-fluid rounded-circle" alt="the interior &apos;hallway&apos; of the prison">
+            </div>
+        </div>
+        <div class="row mt-1 d-flex justify-content-center">
+            <caption class="text-center">The prison I used to be a CO at :-]</caption>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="mb-4 col-md-6 d-block mx-auto">
+            <button class="btn btn-primary btn-md d-block d-sm-block mx-auto mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Learn More
+            </button>
+            <button class="btn btn-dark btn-md d-none d-md-block mx-auto" type="button">
+                Contact Me
+            </button> 
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
