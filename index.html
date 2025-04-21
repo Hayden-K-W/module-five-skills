@@ -5,26 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        .nav-link:hover {
+            color: #000 !important;
+        }
+        .navbar-nav .nav-link.active {
+            color: #c2d515 !important; 
+        }
+
+        .nav-link:hover {
+            color: #000 !important;
+            background-color: #ffffff;
+        }
+
+        .navbar-brand:hover {
+            color: #000 !important;
+        }
+
+        .navbar-toggler {
+            color: white;
+            border-color: white;
+        }
+
+        .navbar-toggler:hover {
+            color: #000 !important;
+            background-color: #ffffff;
+        }
+
+        .form-check-input {
+            color: black;
+            border-color: black 2px solid;
+        }
+    </style>
   </head>
   <body>
     <div class="container">
-        <div class="row w-100 mb-4">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand font-weight-bold" href="#">Hayden White</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="row w-100 text-center">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
+                <div class="container-fluid bg-primary text-white w-100">
+                  <a class="navbar-brand font-weight-bold col-md-6 text-white text-center" href="#">Hayden White</a>
+                  <button class="navbar-toggler text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mx-2 mb-lg-0 icon-link-hover">
+                  <div class="collapse navbar-collapse text-center col-md-6" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto d-flex align-items-center justify-content-center mb-lg-0 icon-link-hover text-center w-100    ">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-center text-white :hover w-100" aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link text-white text-center" href="#">About</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link text-white text-center icon-link-hover" href="#">Contact</a>
                     </ul>
                   </div>
                 </div>
@@ -59,7 +91,11 @@
                     <label for="validation-password" class="form-label">Password</label>
                     <input type="password" class="form-control" id="validation-password" placeholder="Password" required>
                 </div>
-                <button class="btn btn-primary btn-sm" type="submit">Submit</button>
+                <div class="form-check mb-4 d-flex align-items-center justify-content-center text-center">
+                    <label for="validation-checkbox" class="form-check-label text-center col-6 d-inline-grid px-1 align-items-center justify-content-center">I agree to the terms and conditions</label>
+                    <input type="checkbox" class="form-check-input" id="validation-checkbox" required>
+                </div>
+                <button class="btn btn-primary btn-md" type="submit">Submit</button>
             </div>
         </form>
         <div class="table-responsive mt-4">
